@@ -267,5 +267,5 @@ fun main() {
     val smartHome = SmartHome(SmartTvDevice(nameOfTv, "Entertainment", "SmartTV"),
                               SmartLightDevice(nameOfLight, "Utility", "Smart Light"))
     //add commands here for both
-    
+    smartHome.turnOnTv()
 }
