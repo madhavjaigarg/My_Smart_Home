@@ -1,10 +1,7 @@
 name: Run Kotlin Code on Main
 
 # Trigger the workflow on push to the main branch
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch
 
 jobs:
   run-kotlin:
