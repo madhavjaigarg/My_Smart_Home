@@ -1,0 +1,20 @@
+name: Run "All Code that there is" on Main
+
+# Trigger the workflow on push to the main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Run the script
+    - name: Run "All Code that there is"
+      run: bash "./All Code that there is"
